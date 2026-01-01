@@ -1,0 +1,125 @@
+{
+  "contactBar": {
+    "contactItems": [
+      {
+        "type": "email",
+        "label": "pasan62nanayakkara@gmail.com",
+        "icon": "/images/icon/mail-icon.svg",
+        "link": "mailto:pasan62nanayakkara@gmail.com"
+      },
+      {
+        "type": "phone",
+        "label": "+94-76 1913194",
+        "icon": "/images/icon/call-icon.svg",
+        "link": "tel:+94761913194"
+      },
+      {
+        "type": "website",
+        "label": "www.ravindu.qzz.io",
+        "icon": "/images/icon/web-icon.svg",
+        "link": "https://www.ravindu.qzz.io"
+      }
+    ],
+    "socialItems": [
+      {
+        "platform": "behance",
+        "icon": "/images/icon/behance-icon.png",
+        "link": "https://www.behance.net/ravindu_nanayakkara"
+      },
+      {
+        "platform": "dribbble",
+        "icon": "/images/icon/dribble-icon.svg",
+        "link": "https://dribbble.com/ravindu_62"
+      },
+      {
+        "platform": "linkedin",
+        "icon": "/images/icon/linkedin-icon.svg",
+        "link": "https://www.linkedin.com/in/ravindu-nanayakkara-7a50a624b/"
+      },
+      {
+        "platform": "github",
+        "icon": "/images/icon/github-icon.png",
+        "link": "https://github.com/Ravindu62"
+      }
+    ]
+  },
+  "educationData": {
+    "education": [
+      {
+        "title": "G.C.E Ordinary Level - 2017",
+        "institution": "St. Aloysius College, Galle",
+        "results": "Achieved 8 A passes and 1 B pass in the first attempt"
+      },
+      {
+        "title": "G.C.E Advanced Level - 2020",
+        "institution": "St. Aloysius College, Galle",
+        "results": "Achieved 3 A passes in Art Scheme in the first attempt"
+      },
+      {
+        "title": "BSc.(Hons) in Information Technology - 2026",
+        "institution": "University of Colombo School of Computing (UCSC)",
+        "results": "Current GPA - 3.61 and Expected to graduate in 2026"
+      }
+    ],
+    "skills": [
+      {
+        "name": "Figma",
+        "icon": "/images/home/education-skill/figma-icon.svg",
+        "rating": 5
+      },
+      {
+        "name": "Photoshop",
+        "icon": "/images/home/education-skill/photoshop-icon.svg",
+        "rating": 5
+      },
+      {
+        "name": "Sketch",
+        "icon": "/images/home/education-skill/sketch-icon.svg",
+        "rating": 4
+      },
+      {
+        "name": "Adobe XD",
+        "icon": "/images/home/education-skill/adobe-icon.svg",
+        "rating": 4
+      },
+      {
+        "name": "Framer",
+        "icon": "/images/home/education-skill/framer-icon.svg",
+        "rating": 5
+      },
+      {
+        "name": "Invasion",
+        "icon": "/images/home/education-skill/invision-icon.svg",
+        "rating": 3
+      }
+    ]
+  },
+  "contactLinks": {
+    "socialLinks": [
+      {
+        "title": "Dribble",
+        "href": "/"
+      },
+      {
+        "title": "Facebook",
+        "href": "/"
+      },
+      {
+        "title": "LinkedIn",
+        "href": "/"
+      }
+    ],
+    "contactInfo": [
+      {
+        "type": "email",
+        "label": "hello@imsruthi.com",
+        "link": "mailto:hello@imsruthi.com"
+      },
+      {
+        "type": "phone",
+        "label": "+901 5588 2500",
+        "link": "tel:+90155882500"
+      }
+    ]
+  }
+}
