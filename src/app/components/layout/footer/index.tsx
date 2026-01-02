@@ -20,7 +20,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-primary hover:underline"
             >
-              getnextjstemplates
+              Ravindu Nanayakkara
             </a>{" "}
             • Distributed by{" "}
             <a
