@@ -63,33 +63,87 @@
     ],
     "skills": [
       {
+        "name": "Microsoft 365",
+        "icon": "/images/home/education-skill/f066c084e6b6ea068ef91db9b0f33c3e.jpg",
+        "rating": 4
+      },
+      {
+        "name": "Teams",
+        "icon": "/images/home/education-skill/Microsoft_Office_Teams_(2019–2025).svg.png",
+        "rating": 5
+      },{
+        "name": "Trello",
+        "icon": "/images/home/education-skill/Trello_icon-icons.com_66775.webp",
+        "rating": 3
+      },{
+        "name": "Confluence",
+        "icon": "/images/home/education-skill/confluence-1.svg",
+        "rating": 3
+      },{
+        "name": "MS Project Planer",
+        "icon": "/images/home/education-skill/Microsoft_Project_(2019–present).svg.png",
+        "rating": 5
+      },
+      {
+        "name": "Outlook",
+        "icon": "/images/home/education-skill/Microsoft_Outlook_Icon_(2025–present).svg.png",
+        "rating": 4
+      },{
+        "name": "Jira",
+        "icon": "/images/home/education-skill/Atlassian-Logo-2010s1.png",
+        "rating": 4
+      },
+      {
+        "name": "Asana",
+        "icon": "/images/home/education-skill/asana-1.svg",
+        "rating": 3
+      },{
+        "name": "HTML",
+        "icon": "/images/home/education-skill/Other-html-5-icon.png",
+        "rating": 3
+      },{
+        "name": "CSS",
+        "icon": "/images/home/education-skill/5968242.png",
+        "rating": 3
+      },{
+        "name": "JavaScript",
+        "icon": "/images/home/education-skill/470-4707396_javascript-icon-html-css-js-icons.png",
+        "rating": 3
+      },{
+        "name": "GitHub",
+        "icon": "/images/home/education-skill/25231.png",
+        "rating": 3
+      },{
+        "name": "Draw.io",
+        "icon": "/images/home/education-skill/draw.png",
+        "rating": 3
+      },{
+        "name": "Python",
+        "icon": "/images/home/education-skill/Python-logo-notext.svg.webp",
+        "rating": 3
+      },{
+        "name": "Canva",
+        "icon": "/images/home/education-skill/canva-icon.webp",
+        "rating": 3
+      },{
         "name": "Figma",
         "icon": "/images/home/education-skill/figma-icon.svg",
-        "rating": 5
-      },
-      {
-        "name": "Photoshop",
-        "icon": "/images/home/education-skill/photoshop-icon.svg",
-        "rating": 5
-      },
-      {
-        "name": "Sketch",
-        "icon": "/images/home/education-skill/sketch-icon.svg",
-        "rating": 4
-      },
-      {
-        "name": "Adobe XD",
-        "icon": "/images/home/education-skill/adobe-icon.svg",
-        "rating": 4
-      },
-      {
-        "name": "Framer",
-        "icon": "/images/home/education-skill/framer-icon.svg",
-        "rating": 5
-      },
-      {
-        "name": "Invasion",
-        "icon": "/images/home/education-skill/invision-icon.svg",
+        "rating": 3
+      },{
+        "name": "Adobe Photoshop",
+        "icon": "/images/home/education-skill/Adobe_Photoshop_icon.svg.png",
+        "rating": 3
+      },{
+        "name": "Adobe Illustrator",
+        "icon": "/images/home/education-skill/adobe_Illustrator.svg.png",
+        "rating": 3
+      },{
+        "name": "Capcut",
+        "icon": "/images/home/education-skill/capcut-icon.webp",
+        "rating": 3
+      },{
+        "name": "Postman",
+        "icon": "/images/home/education-skill/postman-icon.svg",
         "rating": 3
       }
     ]
@@ -99,6 +153,19 @@
       {
         "title": "Dribble",
         "href": "/"
+      },{
+        "title": "Behance",
+        "href": "/"
+      },{
+        "title": "GitHub",
+        "href": "/"
+      },{
+        "title": "Instagram",
+        "href": "/"
+      },
+      {
+        "title": "Medium",
+        "href": "https://medium.com/@pasan62nanayakkara"
       },
       {
         "title": "Facebook",
@@ -112,13 +179,13 @@
     "contactInfo": [
       {
         "type": "email",
-        "label": "hello@imsruthi.com",
-        "link": "mailto:hello@imsruthi.com"
+        "label": "pasan62nanayakkara@gmail.com",
+        "link": "mailto:pasan62nanayakkara@gmail.com"
       },
       {
         "type": "phone",
-        "label": "+901 5588 2500",
-        "link": "tel:+90155882500"
+        "label": "+94-76 1913194",
+        "link": "tel:+94761913194"
       }
     ]
   }

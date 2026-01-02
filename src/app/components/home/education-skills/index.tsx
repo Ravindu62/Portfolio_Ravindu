@@ -39,8 +39,8 @@ const EducationSkills = () => {
               <h2>Education & Skills</h2>
               <p className="text-xl text-orange-500">( 03 )</p>
             </div>
-            <div className="flex flex-col lg:flex-row items-center gap-10 xl:gap-20">
-              <div className="w-full lg:max-w-md flex flex-col gap-0 xl:gap-8">
+            <div className="flex flex-col lg:flex-row items-start gap-10 xl:gap-20">
+              <div className="w-full lg:max-w-md flex flex-col gap-8 xl:gap-12">
                 {educationData?.education?.map((value: any, index: any) => {
                   return (
                     <div key={index} className="flex items-start gap-6">
@@ -48,57 +48,91 @@ const EducationSkills = () => {
                         <div className="w-1.5 h-1.5 rounded-full bg-black"></div>
                       </div>
                       <div className="flex-1 flex flex-col gap-2">
-                        <h5>{value?.title}</h5>
-                        <p className="font-normal">{value?.institution}</p>
-                        <p className="font-normal">{value?.results}</p>
+                        <h5 className="font-bold">{value?.title}</h5>
+                        <p className="font-normal text-gray-600">{value?.institution}</p>
+                        <p className="font-normal text-gray-500">{value?.results}</p>
                       </div>
                     </div>
                   );
                 })}
               </div>
-              <div className="grid grid-cols-2 xs:grid-cols-3 gap-5 xl:gap-7 w-full">
-                {educationData?.skills?.map((value: any, index: any) => {
-                  return (
-                    <div
-                      key={index}
-                      className="p-4 xl:p-6 border border-softGray rounded-lg flex flex-col gap-5 sm:gap-10 items-center justify-between"
-                    >
-                      <div className="flex flex-col items-center gap-5">
-                        <Image
-                          src={getImgPath(value?.icon)}
-                          alt="icon"
-                          width={70}
-                          height={70}
-                        />
-                        <p className="text-black font-normal">{value?.name}</p>
-                      </div>
-                      <div className="flex gap-1">
-                        {[...Array(5)].map((_, i) => (
-                          <svg
-                            key={i}
-                            width="9"
-                            height="9"
-                            viewBox="0 0 9 9"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <rect
-                              width="9"
-                              height="9"
-                              rx="4.5"
-                              fill={i < value?.rating ? "#FE4300" : "#C0D8E0"}
+
+              {/* --- SKILLS SCROLL SECTION START --- */}
+              <div className="w-full">
+                <div 
+                  className="pr-4 overflow-y-auto scrollbar-thin" 
+                  style={{ 
+                    maxHeight: "460px", /* Height roughly for 2 rows + gap */
+                    scrollbarWidth: 'thin',
+                    scrollbarColor: '#FE4300 #f1f1f1'
+                  }}
+                >
+                  <div className="grid grid-cols-2 xs:grid-cols-3 gap-5 xl:gap-7 w-full">
+                    {educationData?.skills?.map((value: any, index: any) => {
+                      return (
+                        <div
+                          key={index}
+                          className="p-4 xl:p-6 border border-softGray rounded-lg flex flex-col gap-5 sm:gap-10 items-center justify-between bg-white hover:shadow-md transition-shadow"
+                        >
+                          <div className="flex flex-col items-center gap-5">
+                            <Image
+                              src={getImgPath(value?.icon)}
+                              alt={value?.name}
+                              width={70}
+                              height={70}
+                              className="object-contain"
                             />
-                          </svg>
-                        ))}
-                      </div>
-                    </div>
-                  );
-                })}
+                            <p className="text-black font-semibold text-center">{value?.name}</p>
+                          </div>
+                          <div className="flex gap-1">
+                            {[...Array(5)].map((_, i) => (
+                              <svg
+                                key={i}
+                                width="9"
+                                height="9"
+                                viewBox="0 0 9 9"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <rect
+                                  width="9"
+                                  height="9"
+                                  rx="4.5"
+                                  fill={i < value?.rating ? "#FE4300" : "#C0D8E0"}
+                                />
+                              </svg>
+                            ))}
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
               </div>
+              {/* --- SKILLS SCROLL SECTION END --- */}
+
             </div>
           </div>
         </div>
       </div>
+
+      {/* Global CSS for the scrollbar appearance */}
+      <style jsx>{`
+        .scrollbar-thin::-webkit-scrollbar {
+          width: 6px;
+        }
+        .scrollbar-thin::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 10px;
+        }
+        .scrollbar-thin::-webkit-scrollbar-thumb {
+          background: #FE4300;
+          border-radius: 10px;
+        }
+        .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+          background: #e03a00;
+        }
+      `}</style>
     </section>
   );
 };
