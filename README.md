@@ -1,46 +1,28 @@
-# Resume - Free Next.js Resume Website Template
-#### Preview
+# Personal Portfolio Website
 
- - [Demo](https://themewagon.github.io/Resume-Nextjs/)
+This is my personal portfolio website built using **Next.js**, customized from an open-source resume template.  
+It showcases my profile, skills, projects, and contact information in a clean and responsive layout.
 
-#### Download
- - [Download from ThemeWagon](https://themewagon.com/themes/resume-nextjs/)
+## 🔗 Live Preview
+- [Live Demo](YOUR_DEPLOYED_LINK_HERE)
 
+---
 
-## Getting Started
+## 🚀 Tech Stack
+- **Next.js**
+- **React**
+- **JavaScript**
+- **CSS / Tailwind CSS** (if used)
+- **Node.js**
 
-Clone from GitHub 
-```bash
-git clone https://github.com/themewagon/Resume-Nextjs.git
-```
+---
 
-Install dependencies:
-```bash
-npm install
-```
+## ✨ Features
+- Responsive and modern UI
+- About Me section
+- Skills overview
+- Projects showcase
+- Contact section
+- Fast performance with Next.js
 
-Run development server:
-```bash
-npm run dev
-```
-
-Build for production:
-```bash
-npm run build
-```
-
-## Author
-
-Design and code are written by the getnextjstemplates design & development team.  
-
-
-## License
-
- - Design and Code is Copyright &copy; [getnextjstemplates](https://getnextjstemplates.com/)
- - Licensed under [MIT]
- - Distributed by [ThemeWagon](https://themewagon.com)
-
-
-
-
-
+---
