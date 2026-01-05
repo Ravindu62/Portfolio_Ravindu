@@ -2,7 +2,8 @@
 import { getDataPath, getImgPath } from "@/utils/image";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import emailjs from '@emailjs/browser';
+import { useEffect, useState, useRef } from "react";
 
 const Contact = () => {
   const [contactData, setContactData] = useState<any>(null);
@@ -36,34 +37,31 @@ const Contact = () => {
     formData.message = "";
   };
 
-  const handleSubmit = async (e: any) => {
-    e.preventDefault();
+  const form = useRef<HTMLFormElement>(null);
 
-    fetch("https://formsubmit.co/ajax/bhainirav772@gmail.com", {
-      method: "POST",
-      headers: { "Content-type": "application/json" },
-      body: JSON.stringify({
-        name: formData.name,
-        number: formData.number,
-        email: formData.email,
-        message: formData.message,
-      }),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        setSubmitted(data.success);
-        reset();
-      })
-      .catch((error) => {
-        console.log(error.message);
-      });
-  };
-  const handleChange = (e: any) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+      e.preventDefault();
+
+      emailjs.sendForm(
+        'service_tf7cntp',
+        'template_2xirfjs',
+        form.current!,
+        't3rJZ1iyMcr-0_0QL'
+      )
+    .then(
+      () => {
+        setSubmitted(true);
+        form.current?.reset();
+        //alert('Your message was sent successfully. I will get back to you soon.');
+        setTimeout(() => {
+        setSubmitted(false);
+        }, 5000);
+      },
+      (error) => {
+        console.error("EmailJS error:", error);
+        alert('Failed to send message. Try again or email me directly at pasan62nanayakkara@gmail.com');
+      }
+    );
   };
 
   return (
@@ -75,7 +73,7 @@ const Contact = () => {
             <p className="text-xl text-orange-500">( 05 )</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <form onSubmit={handleSubmit}>
+            <form ref={form} onSubmit={sendEmail}>
               <div className="flex flex-col gap-7 sm:gap-12">
                 <div className="grid grid-cols-2 gap-8">
                   <div>
@@ -86,9 +84,7 @@ const Contact = () => {
                       required
                       className="input"
                       id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
+                      name="name"                      
                     />
                   </div>
                   <div>
@@ -101,8 +97,6 @@ const Contact = () => {
                       id="number"
                       type="number"
                       name="number"
-                      value={formData.number}
-                      onChange={handleChange}
                     />
                   </div>
                 </div>
@@ -116,8 +110,6 @@ const Contact = () => {
                     id="email"
                     type="email"
                     name="email"
-                    value={formData.email}
-                    onChange={handleChange}
                   />
                 </div>
                 <div>
@@ -129,8 +121,6 @@ const Contact = () => {
                     className="input"
                     name="message"
                     id="message"
-                    value={formData.message}
-                    onChange={handleChange}
                     rows={2}
                   />
                 </div>
