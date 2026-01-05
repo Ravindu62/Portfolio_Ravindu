@@ -12,7 +12,7 @@ const Footer = () => {
             </div>
             <div className="flex-grow h-px bg-black" />
           </div>
-          <p className="text-secondary">
+          {/* <p className="text-secondary">
             Designed by{" "}
             <a
               href="https://getnextjstemplates.com/"
@@ -31,7 +31,7 @@ const Footer = () => {
             >
               ThemeWagon
             </a>
-          </p>
+          </p> */}
         </div>
       </div>
     </footer>
