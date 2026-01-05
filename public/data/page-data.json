@@ -25,6 +25,10 @@
         "platform": "behance",
         "icon": "/images/icon/behance-icon.png",
         "link": "https://www.behance.net/ravindu_nanayakkara"
+      },{
+        "platform": "medium",
+        "icon": "/images/icon/5968906.png",
+        "link": "https://medium.com/@pasan62nanayakkara"
       },
       {
         "platform": "dribbble",
